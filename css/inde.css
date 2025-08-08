@@ -124,7 +124,7 @@ h2{
 }
 
 #Nalga{
-    background-image: url(/imagenes/Pulpas.jpg);
+    background-image: url(imagenes/Pulpas.jpg);
     background-size: cover;
     background-position: center;
     animation-delay: 0.15s;
