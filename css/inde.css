@@ -1,0 +1,311 @@
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* o negro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#preloader img {
+    width: 100px; /* ajusta según tu imagen */
+    height: auto;
+    border-radius: 30px;
+    transform: rotateY(360deg);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(78, 14, 14);
+}
+
+header img{
+    height: 90px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+
+}
+
+h1{
+    font-family:"Berkshire Swash", serif;
+    color:rgb(216, 32, 32);
+    text-shadow: 4px 5px 6px black;    
+    text-align: center;
+}
+
+h1 strong{
+    font-size: 1.5em;
+    padding-bottom:10px;
+}
+h1 sub{
+    font-size: 25px;
+    
+}
+form{
+    margin-top: 3%;
+    margin-right: 2%;
+}
+
+input{
+    padding: 5px 8px;
+    border-radius: 30px;
+    background-image: linear-gradient(rgb( 0, 0, 0, .3)) ,url(https://media.istockphoto.com/id/1313696101/es/vector/carne-dibujada-a-mano-bistec-carne-de-res-y-cerdo-patr%C3%B3n-sin-costuras-de-salchichas-a-la.jpg?s=612x612&w=0&k=20&c=3L5PXfT6-ZCecQy4zfYKpEzmM1h_5VmTb5JSxt4yjPQ=);
+    color: rgb(44, 32, 13);
+}
+
+#btn1{
+    padding: 5px 8px;
+    border-radius:35px ;
+    background-image: url(https://media.istockphoto.com/id/1313696101/es/vector/carne-dibujada-a-mano-bistec-carne-de-res-y-cerdo-patr%C3%B3n-sin-costuras-de-salchichas-a-la.jpg?s=612x612&w=0&k=20&c=3L5PXfT6-ZCecQy4zfYKpEzmM1h_5VmTb5JSxt4yjPQ=);
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    color:orangered;
+    text-shadow: 2px 4px 5px black;
+}
+.ofertas{
+    margin-top: 0;
+}
+.hero{
+    perspective: 300px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    width: 500px;
+    position: relative;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tarjeta{
+    width: 120px;
+    height: 150px;
+    background-color: #442222;
+    font-size: 40px;
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    animation: carusel 24s linear infinite;
+}
+
+@keyframes carusel{
+    from{
+        transform: rotateY(360deg) translateZ(110px);
+        z-index: 10;
+        opacity: 0.9;
+    }
+    
+    50%{
+        z-index: -10;
+    }
+
+    to{
+        transform: rotateY(0deg) translateZ(110px);
+        z-index: 10;
+    }
+}
+
+#Nalga{
+    background-image: url(/imagenes/Pulpas.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: 0.15s;
+}
+
+#Lanar{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Rttrq_6x8T-H8joxuxPq-7s0ufAgl1wqpw&s);
+    background-size: cover;
+    background-position: center;
+    animation-delay:5s ;
+}
+
+#Carne_Picada{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXvrIhTrWXO2MwUsI-Vs-fW9Iit7COcHdW1g&s);
+    background-size: cover;
+    background-position: center;
+    animation-delay: 10s;
+}
+
+#Asado{
+    background-image: url(/imagenes/Imagen\ de\ WhatsApp\ 2025-05-05\ a\ las\ 21.14.32_ac05e4d9.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: 14.8s;
+}
+
+#Chorizo{
+    background-image: url(/imagenes/Chorizo.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: 19.5s;
+}
+.tarjeta h3{
+    color: blanchedalmond;
+    font-size: 10px;
+    font-family: cursive;
+    margin-top: 50%;
+    background-color: #ff0000;
+}
+
+.tarjeta p{
+    color: #c04c08;
+    font-size: 15px;
+    text-shadow: 4px 10px 25px  black;
+    font-family: impact;
+    margin-top: 10%;
+}
+
+body.loading #content {
+    display: none !important;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+#preloader img {
+    width: 120px;
+    height: auto;
+    border-radius: 30px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to   { transform: rotateY(360deg); }
+}
+#Calendario{
+ margin-top: 120px;
+ margin-bottom: 50px;
+
+}
+
+#estadoNegocio{
+    position: fixed;
+    top: 30%;
+    margin-left: 2%;
+    padding: 10px 70px;
+}
+
+
+    
+#estadoNegocio {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+.abierto {
+      background-color: green;
+    }
+.cerrado {
+      background-color: red;
+    }
+#infoHorario {
+    position: fixed;
+    top: 35%;
+    margin-left: 2%;
+    border-radius: 30px;
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    display: none;
+    max-width: 300px;
+    font-family: sans-serif;
+    }
+#infoHorario ul li{
+        margin-bottom: 10px;
+        color: bisque;
+    }
+
+
+
+    /*para otros dispositivos */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header img {
+        margin: 10px 0;
+        height: 70px;
+    }
+
+    form {
+        margin: 10px 0;
+        width: 90%;
+    }
+
+    input, #btn1 {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .hero {
+        width: 100%;
+        height: 300px;
+        top: auto;
+        left: 0;
+        transform: none;
+        margin: 20px 0;
+        overflow: hidden;
+    }
+
+    .tarjeta {
+        width: 90px;
+        height: 130px;
+        top: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: carusel 24s linear infinite;
+    }
+
+    .tarjeta h3 {
+        font-size: 11px;
+        margin-top: 55%;
+    }
+
+    .tarjeta p {
+        font-size: 13px;
+    }
+
+    #estadoNegocio,
+    #infoHorario {
+        position: static;
+        margin: 20px auto;
+        width: 90%;
+    }
+}
